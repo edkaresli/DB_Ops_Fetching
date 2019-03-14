@@ -10,12 +10,15 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
 
+  console.log("A GET request was received.");
   res.json({ "msg" : "All is working!" });
 
 });
 
-app.listen(6000, () => {
+const port = 5000;
 
-  console.log('Server is listening on port 6000...');
+app.listen(port, '127.0.0.1', () => {
+
+  console.log(`Server is listening on port ${port}...`);
 
 });
