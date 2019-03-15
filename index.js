@@ -12,8 +12,8 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
 
-  console.log("A GET request was received.");
-  res.json({ "msg" : "All is working!" });
+ // console.log("A GET request was received.");
+ // res.json({ "msg" : "All is working!" });
 
 });
 
